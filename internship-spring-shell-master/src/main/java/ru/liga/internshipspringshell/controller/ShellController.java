@@ -8,7 +8,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
 import java.util.stream.Stream;
 
 @ShellComponent //аннотация необходима чтобы Spring увидел класс как класс-обработчик консоли
@@ -97,7 +96,6 @@ public class ShellController {
             }
         }
 
-        //nominalFrom = "";
         System.out.println("nominal: " + nominalFrom);
 
         for (int i = lineTo.length() - 1; i > 0; i--) {
@@ -131,10 +129,10 @@ public class ShellController {
         }
 
         if (lineFrom == null) {
-            String res2 = String.valueOf(val/(coefficient/nominalTo));
+            String res2 = String.valueOf(val / (coefficient / nominalTo));
             res = res.append(res2);
         } else {
-            String res2 = String.valueOf(((val * coefficientFrom)/nominalFrom) / ((coefficient)/nominalTo));
+            String res2 = String.valueOf(((val * coefficientFrom) / nominalFrom) / ((coefficient) / nominalTo));
             res = res.append(res2);
         }
 
