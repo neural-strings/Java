@@ -42,14 +42,11 @@ public class ShellController {
 
         StringBuffer res = new StringBuffer();
 
-        String test = "Test 1";
         String rub = "RUB";
         String lineFrom = "";
         String lineTo = "";
 
         Path codesPath = Paths.get("src/main/resources/tsv/currencies.tsv");
-        System.out.println("Test: " + from);
-        System.out.println("Test: " + test.contains("Test"));
 
         Stream<String> stream1;
         Stream<String> stream2;
