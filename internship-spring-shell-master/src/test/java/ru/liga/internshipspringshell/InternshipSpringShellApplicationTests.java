@@ -9,5 +9,4 @@ class InternshipSpringShellApplicationTests {
     @Test
     void contextLoads() {
     }
-
 }

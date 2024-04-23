@@ -143,5 +143,9 @@ public class ShellController {
         //Запрос ввида: convertor 100 --from USD --to AUD
         //Запрос ввида: convertor 100 --from USD --to INR
     }
+
+//    @ShellMethod("Method ")
+//    public
+
 }
 
